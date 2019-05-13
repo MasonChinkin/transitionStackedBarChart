@@ -1,0 +1,78 @@
+#container {
+  height: 75vh;
+  width: 125vh;
+  background: white;
+}
+
+h1 {
+  font-family: Helvetica, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  padding-left: 50px;
+  color: black;
+}
+
+.hidden {
+  display: none;
+}
+
+.axis {
+  stroke-width: 1.5;
+  pointer-events: none;
+}
+
+.axis text {
+  font: 16px arial;
+}
+
+.textselected {
+  font: 16px arial;
+  pointer-events: none;
+  text-anchor: start;
+}
+
+#indivBars:hover {
+  stroke: black;
+  stroke-width: 3;
+}
+
+div.tooltip {
+  position: absolute;
+  text-align: center;
+  width: auto;
+  height: auto;
+  padding: 2px;
+  font: 16px sans-serif;
+  background: white;
+  border: 0px;
+  border-radius: 8px;
+  pointer-events: none;
+  color: black;
+}
+
+#backButton {
+  cursor: pointer;
+}
+
+#backButton rect {
+  fill: rgb(175, 240, 91);
+}
+
+#backButton text {
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  fill: black;
+}
+
+#backButton:hover rect {
+  fill: rgb(26, 199, 194);
+}
+
+#backButton:hover text {
+  fill: white;
+}
+
+.unclickable {
+  pointer-events: none;
+}
