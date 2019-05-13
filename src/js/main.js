@@ -51,7 +51,6 @@ export default function () {
 
   d3.csv('data/growth_data.csv', rowConverter).then(data => {
     dataset = data
-
     d3.csv('data/growth_data_lines.csv', rowConverter).then(gdpLineData => {
       gdpLineDataset = gdpLineData
 
@@ -515,7 +514,6 @@ export default function () {
     legend.append('text')
       .attr('x', wLegend + 20)
       .attr('y', hLegend + 42)
-      //.attr('dy', '.35em')
       .text((d, i) => d)
       .attr('class', 'textselected')
   }
@@ -528,7 +526,6 @@ export default function () {
     if (viewState == 1) {
 
       //Reveal it
-
       //Set up dynamic button text
       const buttonText = '&larr; Back'
 
@@ -546,13 +543,11 @@ export default function () {
         .style('opacity', 1)
 
     } else {
-
       //Hide it
       backButton.classed('unclickable', true)
         .transition()
         .duration(200)
         .style('opacity', 0)
-
     }
   }
 
