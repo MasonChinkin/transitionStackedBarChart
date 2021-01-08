@@ -124,7 +124,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 
@@ -152,14 +152,13 @@ a {
 }
 
 body::-webkit-scrollbar {
-  width: 0 !important
+  width: 0 !important;
 }
 
 body {
   margin: 0;
   padding: 0;
   overflow-y: hidden;
-
 }
 
 body:hover {
